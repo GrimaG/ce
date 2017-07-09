@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SC cliente</title>
+	<!-- BOOTSTRAP STYLES-->
+	<link href="/assets/css/bootstrap.css" rel="stylesheet" />
+	<!-- FONTAWESOME STYLES-->
+	<link href="/assets/css/font-awesome.css" rel="stylesheet" />
+	<!-- CUSTOM STYLES-->
+	<link href="/assets/css/custom.css" rel="stylesheet" />
+	<!-- GOOGLE FONTS-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	
+
+
+</head>
+
+<body>
+	<div>
+
+		<!-- /. NAV TOP  -->
+
+		<!-- /. NAV SIDE  -->
+		<div id="page-wrapper">
+			<div id="page-inner">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>SC cliente</h2>
+					</div>
+				</div>
+				<!-- /. ROW  -->
+				<hr />
+
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="form-group">
+							<label>Cliente</label>
+							<input id="cliente" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label>Data</label>
+							<input id="date" type="date" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label>Total</label>
+							<input id="valor" disabled="true" type="number" step="0.01" class="form-control" />
+						</div>
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h5>Itens</h5>
+
+
+						<table id="tabela" class="table table-striped table-bordered table-hover">
+							<thead>
+								<tr>
+
+									<th>Descrição</th>
+									<th>Quantidade</th>
+									<th>Valor</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input id="desc" /></td>
+									<td><input id="qtd" type="number" /></td>
+									<td><input type="number" step="0.01" id="valor_unit" /> </td>
+									<td style = "text-align: center;"><a onclick="return insertValueTable();"  class="btn btn-success">Adicionar</a></td>
+
+								</tr>
+
+							</tbody>
+						</table>
+
+					</div>
+
+				</div>
+				<div class="col-md-4" >
+					<h2>Enviar para:</h2>
+				</div>
+				<div class="col-md-4" >
+
+					<h5><input type="radio" id="myserver"    name="server" value="myserver" checked> Gustavo & Gabriel</h5>
+					<h5><input type="radio" id="otherServer" name="server" value="other" checked> Yago & Adler<h5><br>
+				</div>
+				<div class="col-md-4" style="float:right;">
+					<br>
+					<a onclick="return send()" target="_blank" class="btn btn-danger btn-lg btn-block">Enviar</a>
+				</div>
+
+
+				<!-- /. ROW  -->
+
+			</div>
+			<!-- /. PAGE INNER  -->
+		</div>
+		<!-- /. PAGE WRAPPER  -->
+	</div>
+	<!-- /. WRAPPER  -->
+	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+	<!-- JQUERY SCRIPTS -->
+	<script src="/assets/js/jquery-1.10.2.js"></script>
+	<script src="/assets/js/functions.js"></script>
+	<!-- BOOTSTRAP SCRIPTS -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- METISMENU SCRIPTS -->
+	<script src="/assets/js/jquery.metisMenu.js"></script>
+	<!-- CUSTOM SCRIPTS -->
+
+	<!-- Meus Scripts -->
+
+
+
+</body>
+
+</html>
